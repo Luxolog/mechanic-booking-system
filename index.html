@@ -30,7 +30,15 @@
 <div class="field"><label for="time">Preferred time</label><select id="time" name="time"><option value="">Any time</option><option>08:00–10:00</option><option>10:00–12:00</option><option>12:00–14:00</option><option>14:00–16:00</option></select></div>
 <div class="field full"><div class="hint" style="padding:12px 14px;border-radius:10px;background:#fff3e8;border:1px solid #f2c49d;color:#7b3b12"><strong>Safety note:</strong> If your brakes are failing, the engine is severely overheating, or the vehicle feels unsafe to drive, stop in a safe place and arrange professional assistance. Do not continue driving.</div></div>\n<div class="field full symptom"><label for="symptoms">What is your car doing? *</label><span class="hint">In a few words, describe what you've noticed. For example: making a knocking noise, struggling to start, losing power, overheating, or leaking oil.</span><textarea id="symptoms" name="symptoms" required maxlength="600" placeholder="Briefly describe what is happening with your car…" ></textarea><span class="hint">You can keep it short. Add when it happens or any warning lights if you know.</span></div>
 <div class="field full"><label for="extra">Anything else we should know? (optional)</label><textarea id="extra" name="extra" maxlength="600" placeholder="Any other details…"></textarea></div>
-</div><div class="actions"><button type="submit">Send booking request</button><span class="notice">Demo prototype: requests are saved only in this browser on this device. No message is sent to the mechanic yet.</span></div><div class="success" id="success" role="status"></div></form>
+</div><div class="field full" style="border:1px solid #f0d69e;background:#fffaf0;border-radius:13px;padding:16px">
+<label for="calloutAgree">Call-out fee: R450</label>
+<p class="hint">A call-out fee of <strong>R450</strong> applies to this booking request. Please confirm that you understand and agree before submitting.</p>
+<label style="display:flex;align-items:flex-start;gap:10px;font-weight:600;line-height:1.5">
+<input id="calloutAgree" name="calloutAgree" type="checkbox" required style="width:18px;height:18px;flex:0 0 18px;margin-top:2px">
+<span>I understand and agree to the R450 call-out fee.</span>
+</label>
+</div>
+<div class="actions"><button type="submit">Send booking request</button><span class="notice">Demo prototype: requests are saved only in this browser on this device. No message is sent to the mechanic yet.</span></div><div class="success" id="success" role="status"></div></form>
 </section></main><div class="foot" id="how">Davhana AutoCare · Booking requests are subject to confirmation by the mechanic.</div>
 <script>
 const form=document.getElementById('bookingForm'), success=document.getElementById('success');
